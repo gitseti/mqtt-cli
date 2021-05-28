@@ -628,7 +628,7 @@ task buildPackageAll {
 
 githubRelease {
     token "" + System.getenv("githubToken")
-    owner = project.githubOrg
+    owner = "gitseti"
     targetCommitish "master"
     body ""
     draft true
