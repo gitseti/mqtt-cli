@@ -23,3 +23,8 @@ jobs:
         run: ./gradlew githubRelease
         env:
           githubToken: secrets.GITHUB_TOKEN
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.3
+        with:
+          branch: gh-pages
+          folder: doc
