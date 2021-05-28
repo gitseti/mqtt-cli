@@ -631,7 +631,7 @@ githubRelease {
     owner = "gitseti"
     targetCommitish "master"
     body ""
-    draft true
+    draft false
     prerelease false
     releaseAssets jar.archiveFile,
             file("${project.buildRpmDir}/$rpmPackageName"),
