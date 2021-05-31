@@ -19,16 +19,6 @@ jobs:
         with:
           distribution: 'adopt'
           java-version: '11'
-      - name: Attach artifacts to GitHub release
-        run: ./gradlew githubRelease
-        env:
-          githubToken: ${{ secrets.GITHUB_TOKEN }}
-      - name: Deploy 🚀
-        if: github.ref == 'refs/heads/master'
-        uses: JamesIves/github-pages-deploy-action@4.1.3
-        with:
-          branch: gh-pages
-          folder: doc
       - name: Release Docker-Image
         run: ./gradlew jib -Djib.to.tags=${GITHUB_REF##*/}
         env:
