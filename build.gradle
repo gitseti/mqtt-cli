@@ -629,7 +629,7 @@ task buildPackageAll {
 
 githubRelease {
     token "" + System.getenv("githubToken")
-    owner = "dockerseti"
+    owner = "gitseti"
     targetCommitish "master"
     body ""
     draft false
@@ -673,7 +673,7 @@ jib {
         image = 'openjdk:11-slim'
     }
     to {
-        image = 'gitseti/mqtt-cli'
+        image = 'dockerseti/mqtt-cli'
         auth {
             username = System.getenv("DOCKER_USER") == null ? "" : System.getenv("DOCKER_USER")
             password = System.getenv("DOCKER_PASSWORD") == null ? "" : System.getenv("DOCKER_PASSWORD")
