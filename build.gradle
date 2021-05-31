@@ -629,7 +629,7 @@ task buildPackageAll {
 
 githubRelease {
     token "" + System.getenv("githubToken")
-    owner = "gitseti"
+    owner = "dockerseti"
     targetCommitish "master"
     body ""
     draft false
