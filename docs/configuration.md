@@ -6,7 +6,6 @@ has_children: false
 ---
 
 {:.main-header-color-yellow}
-# TEST
 # Default Properties
 ***
 

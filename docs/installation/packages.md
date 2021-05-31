@@ -1,13 +1,25 @@
 ---
 layout: default
 title: Packages
-parent: Installation
-nav_order: 1
+alias: [/installation.md]
 ---
 
 {:.main-header-color-yellow}
-# Installation using a package manager
+# Installation
 *** 
+## Docker
+
+You can run MQTT-CLI on every OS which supports Docker. 
+To execute a simple command use the following syntax: 
+
+```
+docker run hivemq/mqtt-cli <your-command>
+```
+
+To start the Shell-Mode of the CLI you need to add the `-it` flags to the docker-command:
+```
+docker run -it hivemq/mqtt-cli shell
+```
 
 ## Homebrew
 For **Mac OS X** and **Linux** systems use **[Homebrew](https://brew.sh/)** to install MQTT CLI via the **[MQTT CLI Tap](https://github.com/hivemq/homebrew-mqtt-cli)**.
